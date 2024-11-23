@@ -2,14 +2,13 @@
 
 include("connect.php");
 
-$id = $_GET['id'];
 
 if (isset($_POST['btnSubmitPost'])) {
     $content = $_POST['content'];
     $privacy = $_POST['privacy'];
 
 
-    $postQuery = "INSERT INTO posts (userID,content, privacy) VALUES ('$id', '$content', '$privacy')";
+    $postQuery = "INSERT INTO posts (userID,content, privacy) VALUES ('1', '$content', '$privacy')";
     executeQuery($postQuery);
 
     header("Location: index.php");

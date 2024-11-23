@@ -11,7 +11,7 @@ if (!$conn) {
     echo "can't connect to database";
 }
 
-function executeQuery($query)
+function executeQuery($query)  
 {
     $conn = $GLOBALS['conn'];
     return mysqli_query($conn, $query);
