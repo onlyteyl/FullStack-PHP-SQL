@@ -1,0 +1,14 @@
+body{
+    overflow-x: hidden;
+}
+
+.nav-brand{
+    font-size: 20px;
+    font-weight: bold;
+    /* color; */
+}
+
+.btnFilter{
+    background-color: brown!important;
+    border-color: brown!important;
+}
