@@ -1,14 +1,95 @@
 body{
-    overflow-x: hidden;
+    background-color: rgb(236, 236, 236)!important;
 }
 
-.nav-brand{
+.container {
+    max-width: 1200px;
+}
+
+/* Navbar */
+.navbar {
+ 
+}
+
+.nav-brand {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
     font-size: 20px;
     font-weight: bold;
-    /* color; */
+    background-color: rgb(17, 17, 17)!important;
+    padding: 16px;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
 }
 
-.btnFilter{
-    background-color: brown!important;
-    border-color: brown!important;
+.nav-brand span {
+    color: #ffcc00;
+}
+
+/* Card */
+.card {
+    background: white;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 24px;
+}
+
+/* Filter Form */
+.filter-label {
+    font-size: 14px;
+    color: maroon;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.form-control {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 8px 16px;
+}
+
+.btnFilter {
+    background-color: maroon !important;
+    border-color: maroon !important;
+    color: white;
+    padding: 8px 32px;
+    font-size: 12px;
+    border-radius: 5px;
+}
+
+.btnFilter:hover {
+    background-color: #ad0101 !important;
+}
+
+.title-label {
+    font-weight: bold;
+    color: maroon !important;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .card {
+        padding: 16px;
+    }
+
+    .filter-label {
+        font-size: 12px;
+    }
+
+    .form-control {
+        padding: 6px 12px;
+    }
+
+    .btnFilter {
+        padding: 6px 24px;
+        font-size: 14px;
+    }
+
+    .table td, .table th {
+        padding: 12px;
+        font-size: 12px;
+    }
 }
